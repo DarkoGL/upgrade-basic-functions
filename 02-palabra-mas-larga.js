@@ -6,6 +6,13 @@
 // Puedes usar este array para probar tu función:
 
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+
 function findLongestWord(param) {
-    
+   let longestWord = "";
+   param.forEach((avenger) =>{
+    if(avenger.length > longestWord.length) longestWord = avenger;
+   });
+   return console.log(longestWord);
 }
+
+findLongestWord(avengers);
